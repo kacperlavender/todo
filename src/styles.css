@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:wght@300&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Playfair', serif;
+  box-sizing: border-box;
+  border: 1px dashed black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f4f4;
+}
+
+.maindiv {
+  text-align: center;
+  height: 50vh;
+  width: 50vh;
+  background-color: #ffffff;
+  padding-bottom: 15px;
+}
+
+.maininput{
+  width: 100%;
+  margin: 10px 0px 10px 0;
+  border: none;
+  outline: none;
+  padding-left: 7px;
+}
+
+.list{
+  padding: 0;
+  list-style: none;
+  margin: 10px 0 10px 0;
+  border: none;
+
+}
+
+li{
+  margin: 5px 0 5px 0;
+  border: none;
+}
+
+.header{
+  color: #ecdbdb;
+  font-weight: 300;
+  margin: 10px 0 10px 0;
+  border: none;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+label{
+  margin-left: 7px;
+  border: none;
+}
+
+.todo-item-text {
+  margin-left: 5px; 
+  border: none;
+}
+
+.todo-item input[type="checkbox"] {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  border: none;
+  outline: none;
+  padding: 1px;
+}
+
+.todo-item input[type="checkbox"]::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: background-color 0.25s ease;
+}
+
+.todo-item input[type="checkbox"]:checked::before {
+  border: 1px solid #50C878;
+  background-color: #68c8507c;
+  content: "";
+  color: #50C878;
+}
+
+.btn{
+  width: 100%;
+  transition: background-color 0.35s ease;
+}
+
+.btn:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+div{
+  border: none;
+}
